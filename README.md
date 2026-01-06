@@ -55,3 +55,7 @@ The build artifacts will be stored in the `dist/` directory.
 - [Angular](https://angular.dev/)
 - [WebLLM](https://webllm.mlc.ai/)
 - [TailwindCSS](https://tailwindcss.com/)
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://www.rabraghib.me">Rabyâ Raghib</a></p>
