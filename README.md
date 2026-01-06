@@ -12,7 +12,7 @@ The project showcases a Chatbot interface capable of running local AI models.
 
 ### Prerequisites
 
-- Node.js (Latest LTS recommended)
+- Node.js
 - Angular CLI
 
 ### Installation
