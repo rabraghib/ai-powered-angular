@@ -19,7 +19,7 @@ The project showcases a Chatbot interface capable of running local AI models.
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rabraghib/ai-powered-angular.git
    ```
 2. Navigate to the project directory:
    ```bash
