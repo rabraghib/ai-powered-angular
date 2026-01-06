@@ -1,0 +1,50 @@
+<div class="p-6 rounded-lg grid grid-rows-[auto,1fr,auto]">
+  <div class="flex flex-col space-y-1.5 pb-6">
+    <h2 class="font-semibold text-lg tracking-tight">AI Angular Chatbot</h2>
+    <p class="text-sm text-slate-600 leading-3">Powered by WebLLM</p>
+  </div>
+
+  <div class="pr-4 h-full" style="min-width: 100%; display: table">
+    @for (msg of messages(); track $index) {
+      <app-chat-msg [message]="msg"></app-chat-msg>
+    }
+    @if (isReplying()) {
+      <app-chat-msg
+        [message]="{
+          role: 'assistant',
+          content: reply() + '...'
+        }"
+      ></app-chat-msg>
+    }
+  </div>
+
+  <div class="flex items-center pt-0">
+    <form class="flex items-center justify-center w-full space-x-2">
+      <input
+        class="flex h-10 w-full rounded-md border border-[#e5e7eb] px-3 py-2 text-sm placeholder-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#9ca3af] disabled:cursor-not-allowed disabled:opacity-50 text-[#030712] focus-visible:ring-offset-2"
+        placeholder="Type your message"
+        [(ngModel)]="prompt"
+        [ngModelOptions]="{ standalone: true }"
+        [disabled]="isLoading() || isReplying()"
+      />
+      <button
+        (click)="onSend()"
+        [disabled]="isLoading() || isReplying()"
+        class="inline-flex items-center justify-center rounded-md text-sm font-medium text-[#f9fafb] disabled:pointer-events-none disabled:opacity-50 bg-black hover:bg-[#111827E6] h-10 px-4 py-2"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  @if (isLoading()) {
+    <div
+      class="absolute inset-0 bg-white/80 backdrop-blur-sm z-50 flex flex-col items-center justify-center space-y-4 rounded-lg"
+    >
+      <div
+        class="animate-spin h-8 w-8 border-4 border-black border-t-transparent rounded-full"
+      ></div>
+      <p class="text-sm font-medium text-slate-900">{{ loadingProgress() }}</p>
+    </div>
+  }
+</div>
