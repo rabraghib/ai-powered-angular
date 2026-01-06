@@ -58,4 +58,4 @@ The build artifacts will be stored in the `dist/` directory.
 
 ---
 
-<p align="center">Made with ❤️ by <a href="https://www.rabraghib.me">Rabyâ Raghib</a></p>
+<p align="center">Made with ❤️ by <a href="https://rabraghib.com/">Rabyâ Raghib</a></p>
