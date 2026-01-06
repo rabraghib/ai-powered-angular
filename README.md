@@ -1,59 +1,57 @@
-# AiPoweredAngular
+# Build With AI: AI-Powered Angular Web Apps (Chatbot Example)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This project was built during one of the **Build With AI** workshops by **GDG on Campus ENSAM Casablanca**.
 
-## Development server
+**Event Link:** [https://gdg.community.dev/e/mcsrkj/](https://gdg.community.dev/e/mcsrkj/)
 
-To start a local development server, run:
+It is an AI-powered Angular web application that demonstrates how to integrate Large Language Models (LLMs) directly into the browser using WebLLM.
 
-```bash
-ng serve
-```
+The project showcases a Chatbot interface capable of running local AI models.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Getting Started
 
-## Code scaffolding
+### Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Node.js (Latest LTS recommended)
+- Angular CLI
 
-```bash
-ng generate component component-name
-```
+### Installation
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd ai-powered-angular
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng generate --help
-```
+### Running the Application
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To start the local development server:
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-For end-to-end (e2e) testing, run:
+### Building
+
+To build the project for production:
 
 ```bash
-ng e2e
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The build artifacts will be stored in the `dist/` directory.
 
-## Additional Resources
+## Technologies Used
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular](https://angular.dev/)
+- [WebLLM](https://webllm.mlc.ai/)
+- [TailwindCSS](https://tailwindcss.com/)
